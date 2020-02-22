@@ -89,6 +89,12 @@ body {
 .section-header-wrapper__form-input input::placeholder {
   color: #fff;
 }
+.section-header-wrapper__form-button :hover {
+  background: rgba(3, 34, 207, 0.5);
+}
+.section-header-wrapper__form-button :active {
+  transform: translateY(1px);
+}
 .section-header-wrapper__form-button button {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
