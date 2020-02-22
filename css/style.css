@@ -17,6 +17,7 @@ body {
   color: white;
   background: url("../pic/internet-search-engine.jpg") no-repeat 50% 50%;
   background-size: cover;
+  position: relative;
 }
 .section-header .section-inner {
   height: 100vh;
@@ -47,6 +48,9 @@ body {
   display: flex;
   align-items: center;
 }
+.section-header-wrapper {
+  margin: 0 auto;
+}
 .section-header-wrapper__title, .section-header-wrapper__subtitle {
   text-align: center;
 }
@@ -54,12 +58,14 @@ body {
   font-weight: bold;
   font-size: 56px;
   line-height: 60px;
+  margin-bottom: 16px;
 }
 .section-header-wrapper__subtitle {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 32px;
-  margin-bottom: 44px;
+  margin: 0 auto 44px;
+  width: 80%;
 }
 .section-header-wrapper__form {
   display: flex;
