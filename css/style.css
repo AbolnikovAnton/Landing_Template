@@ -1,4 +1,8 @@
 @import 'normalize.css';
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -55,14 +59,39 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 32px;
+  margin-bottom: 44px;
 }
-.section-header-wrapper-form {
+.section-header-wrapper__form {
   display: flex;
 }
-.section-header-wrapper-form-input input {
+.section-header-wrapper__form-input {
+  flex: 1;
+  padding-right: 40px;
+}
+.section-header-wrapper__form-input input {
   font-family: "Montserrat", sans-serif;
   border: none;
   background: rgba(255, 255, 255, 0.25);
   color: white;
   font-size: 16px;
+  margin: 0;
+  padding: 16px 20px;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+}
+.section-header-wrapper__form-input input::placeholder {
+  color: #fff;
+}
+.section-header-wrapper__form-button button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 16px 20px;
+  border: none;
+  background: rgba(1, 39, 255, 0.5);
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
 }

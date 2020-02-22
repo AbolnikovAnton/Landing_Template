@@ -11,6 +11,10 @@
 
 $color-white: #fff;
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     @include font-lato;
 }
@@ -75,19 +79,49 @@ body{
             @include font-montserrat;
             font-size: 18px;
             line-height: 32px;
+            margin-bottom: 44px;
         }
-        &-form{
+        &__form{
             display: flex;
+
             &-input{
+                flex: 1;
+                padding-right: 40px;
+
                 input{
                     @include font-montserrat;
+
                     border: none;
                     background: rgba(255, 255, 255, .25);
                     color: white;
                     font-size: 16px;
+                    margin: 0;
+                    padding: 16px 20px;
+                    outline: none;
+                    border-radius: 5px;
+                    width: 100%;
+
+                    &::placeholder{
+                        color: #fff;
+                    } 
                 }
             }
-            &-button{}
+            &-button{
+                button{
+                    @include font-montserrat;
+
+                    font-size: 18px;
+                    margin: 0;
+                    padding: 16px 20px;
+                    border: none;
+                    background: rgba(1, 39, 255, 0.5);
+                    color: white;
+                    outline: none;
+                    border-radius: 5px;
+                    width: 100%;
+
+                }
+            }
         }
     }
 }
