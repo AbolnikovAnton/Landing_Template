@@ -1,0 +1,65 @@
+@import 'normalize.css';
+
+@maxin font-lato {
+  font-family: "Lato", sans-serif;
+}
+@maxin font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+}
+
+.section-inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+/* -- header -- */
+.section-header {
+  color: white;
+  background: url("../pic/internet-search-engine.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+.section-header .section-inner {
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+.section-header::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(32, 57, 65, 0.6);
+}
+.section-header-logo {
+  font-weight: bold;
+  font-size: 24px;
+  flex-shrink: 1;
+  color: honeydew;
+}
+.section-header-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.section-header-wrapper__subtitle {
+  text-align: center;
+}
+.section-header-wrapper__title {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 60px;
+}
+.section-header-wrapper__subtitle {
+  font-size: 18px;
+  line-height: 32px;
+}
+.section-header-wrapper-form {
+  display: flex;
+}
