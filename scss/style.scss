@@ -1,11 +1,11 @@
 @import 'normalize.css';
 
 // Maxins
-@maxin font-lato{
+@mixin font-lato{
     font-family: 'Lato', sans-serif;
 }
 
-@maxin font-montserrat{
+@mixin font-montserrat{
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -78,7 +78,15 @@ body{
         }
         &-form{
             display: flex;
-            &-input{}
+            &-input{
+                input{
+                    @include font-montserrat;
+                    border: none;
+                    background: rgba(255, 255, 255, .25);
+                    color: white;
+                    font-size: 16px;
+                }
+            }
             &-button{}
         }
     }

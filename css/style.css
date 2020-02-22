@@ -1,12 +1,6 @@
 @import 'normalize.css';
-
-@maxin font-lato {
-  font-family: "Lato", sans-serif;
-}
-@maxin font-montserrat {
-  font-family: "Montserrat", sans-serif;
-}
 body {
+  font-family: "Lato", sans-serif;
 }
 
 .section-inner {
@@ -42,13 +36,14 @@ body {
   font-size: 24px;
   flex-shrink: 1;
   color: honeydew;
+  padding-top: 35px;
 }
 .section-header-content {
   flex-grow: 1;
   display: flex;
   align-items: center;
 }
-.section-header-wrapper__subtitle {
+.section-header-wrapper__title, .section-header-wrapper__subtitle {
   text-align: center;
 }
 .section-header-wrapper__title {
@@ -57,9 +52,17 @@ body {
   line-height: 60px;
 }
 .section-header-wrapper__subtitle {
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 32px;
 }
 .section-header-wrapper-form {
   display: flex;
+}
+.section-header-wrapper-form-input input {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  font-size: 16px;
 }
