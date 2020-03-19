@@ -60,7 +60,7 @@ body{
     @include start-button;
 
     border: none;
-    background: rgba(1, 39, 255, 0.5);  
+    background: linear-gradient(50deg, #304fff7c, rgb(1, 132, 192));
     color: white;
 }
    
@@ -71,6 +71,15 @@ body{
     background: rgb(255, 255, 255);  
     color: #414141;
 }
+
+.btn-free{
+    @include start-button;
+
+    border: none;
+    background: rgb(255, 255, 255);  
+    color: #414141;
+}
+
 
 
 /* -- header -- */
@@ -302,7 +311,7 @@ body{
                 font-size: 16px;
                 line-height: 28px;
                 font-weight: 300;
-                margin-bottom: 40px;
+                margin-bottom: 50px;
 
             }
             &_button{}
@@ -313,4 +322,39 @@ body{
         }
     }
 
+    
 }
+        
+.section-free{
+    text-align: center;
+    color: white;
+    background: linear-gradient(50deg, #304fff7c, rgb(1, 132, 192));
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+    &__title{
+        font-size: 65px;
+        line-height: 60px;
+        font-weight: bold;
+        margin-bottom: 26px;
+    }
+    &__description{
+        @include font-montserrat;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 40px;
+        width: 50%;
+        margin: 0 auto 40px;
+    }
+}
+
+.section-footer{
+    &__logo{}
+    &__nav{}
+    &__copyright_and_links{
+        &-copyright{}
+        &-links{}
+    }
+}
+
+.helper-link{}

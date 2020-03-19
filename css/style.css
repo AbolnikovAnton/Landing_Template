@@ -40,7 +40,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   border: none;
-  background: rgba(1, 39, 255, 0.5);
+  background: linear-gradient(50deg, #304fff7c, #0184c0);
   color: white;
 }
 
@@ -55,6 +55,21 @@ body {
   cursor: pointer;
   text-decoration: none;
   border: 1px solid #414141;
+  background: white;
+  color: #414141;
+}
+
+.btn-free {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 16px 20px;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
   background: white;
   color: #414141;
 }
@@ -257,8 +272,30 @@ body {
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .section-plans__list-item.active {
   background-color: #f6fafd;
+}
+
+.section-free {
+  text-align: center;
+  color: white;
+  background: linear-gradient(50deg, #304fff7c, #0184c0);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.section-free__title {
+  font-size: 65px;
+  line-height: 60px;
+  font-weight: bold;
+  margin-bottom: 26px;
+}
+.section-free__description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 40px;
+  width: 50%;
+  margin: 0 auto 40px;
 }
