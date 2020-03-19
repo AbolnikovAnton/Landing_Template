@@ -147,10 +147,19 @@ body {
   outline: none;
   border-radius: 5px;
   width: 100%;
+  transition: 0.2s;
 }
 .section-header-wrapper__form-input input::placeholder {
   color: #fff;
 }
+.section-header-wrapper__form-input input:focus {
+  background: rgba(255, 255, 255, 0.6);
+}
+.section-header-wrapper__form-button :hover {
+  transition: 0.3s;
+  background-color: #000000;
+}
+
 .section-promo {
   padding-top: 120px;
   padding-bottom: 120px;

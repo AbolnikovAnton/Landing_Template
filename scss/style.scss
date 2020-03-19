@@ -163,13 +163,22 @@ body{
                     outline: none;
                     border-radius: 5px;
                     width: 100%;
+                    transition: 0.2s;
 
                     &::placeholder{
                         color: #fff;
                     } 
+
+                    &:focus{
+                        background: rgba(255, 255, 255, .6);
+                    }
                 }
             }
             &-button{
+                :hover{
+                    transition: 0.3s;
+                    background-color: #000000;
+                }
             }
         }
     }
