@@ -41,8 +41,37 @@ body{
         font-weight: normal;
         color: #6c6c6c;
     }
-
 }
+
+@mixin start-button {
+    @include font-montserrat;
+    
+    font-size: 18px;
+    margin: 0;
+    padding: 16px 20px;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-main{
+    @include start-button;
+
+    border: none;
+    background: rgba(1, 39, 255, 0.5);  
+    color: white;
+}
+   
+.btn-secondary{
+    @include start-button;
+
+    border: 1px solid #414141;
+    background: rgb(255, 255, 255);  
+    color: #414141;
+}
+
 
 /* -- header -- */
 .section-header{
@@ -132,25 +161,6 @@ body{
                 }
             }
             &-button{
-                :hover{
-                    background: rgba(3, 34, 207, 0.5);
-                }
-                :active{
-                    transform: translateY(1px);
-                }
-                button{
-                    @include font-montserrat;
-
-                    font-size: 18px;
-                    margin: 0;
-                    padding: 16px 20px;
-                    border: none;
-                    background: rgba(1, 39, 255, 0.5);
-                    color: white;
-                    outline: none;
-                    border-radius: 5px;
-                    width: 100%;
-                }
             }
         }
     }

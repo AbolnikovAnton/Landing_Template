@@ -29,6 +29,36 @@ body {
   color: #6c6c6c;
 }
 
+.btn-main {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 16px 20px;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background: rgba(1, 39, 255, 0.5);
+  color: white;
+}
+
+.btn-secondary {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 16px 20px;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #414141;
+  background: white;
+  color: #414141;
+}
+
 /* -- header -- */
 .section-header {
   color: white;
@@ -106,25 +136,6 @@ body {
 .section-header-wrapper__form-input input::placeholder {
   color: #fff;
 }
-.section-header-wrapper__form-button :hover {
-  background: rgba(3, 34, 207, 0.5);
-}
-.section-header-wrapper__form-button :active {
-  transform: translateY(1px);
-}
-.section-header-wrapper__form-button button {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  margin: 0;
-  padding: 16px 20px;
-  border: none;
-  background: rgba(1, 39, 255, 0.5);
-  color: white;
-  outline: none;
-  border-radius: 5px;
-  width: 100%;
-}
-
 .section-promo {
   padding-top: 120px;
   padding-bottom: 120px;
