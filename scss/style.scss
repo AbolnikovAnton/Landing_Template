@@ -295,7 +295,7 @@ body{
                 margin-bottom: 26px;
                 
                 .prefix{
-                    color: rgb(255, 81, 0);
+                    color: #ff5100;
                     font-size: 72px;
                     line-height: 86px;
                     font-weight: bold;
@@ -340,6 +340,7 @@ body{
     }
     &__description{
         @include font-montserrat;
+
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 40px;
@@ -349,12 +350,68 @@ body{
 }
 
 .section-footer{
-    &__logo{}
-    &__nav{}
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__logo{
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    &__nav{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 75px;
+        padding: 0;
+        list-style: none;
+
+        li{
+           & + li{
+               margin-left: 60px;
+           } 
+          a{
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #464646;
+            text-decoration: none;
+
+            &.active{
+                color: #ff5100;
+            }
+          }  
+        }
+    }
     &__copyright_and_links{
-        &-copyright{}
-        &-links{}
+        @include font-montserrat;
+
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 20px;
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
-.helper-link{}
+.helper-link{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    li{
+        & + li{
+            margin-left: 25px;
+        } 
+
+       a{
+         color: #464646;
+         text-decoration: none;
+       }  
+     }
+
+}
