@@ -62,6 +62,16 @@ body{
     border: none;
     background: linear-gradient(50deg, #304fff7c, rgb(1, 132, 192));
     color: white;
+
+    &:active{
+        background: rgba(0, 0, 0, 0.411);
+    }
+
+    &:hover{
+        box-shadow: 0 0 5px rgb(0, 0, 0);
+        transition: 0.3s;
+        background-color: #0000005d;
+    }
 }
    
 .btn-secondary{
@@ -70,6 +80,16 @@ body{
     border: 1px solid #414141;
     background: rgb(255, 255, 255);  
     color: #414141;
+
+    &:active{
+        background: rgba(0, 0, 0, 0);
+    }
+
+    &:hover{
+        box-shadow: 0 0 5px rgb(0, 0, 0);
+        transition: 0.3s;
+    }
+
 }
 
 .btn-free{
@@ -78,6 +98,16 @@ body{
     border: none;
     background: rgb(255, 255, 255);  
     color: #414141;
+
+    &:active{
+        background: rgba(0, 0, 0, 0);
+    }
+
+    &:hover{
+        box-shadow: 0 0 5px rgb(0, 0, 0);
+        transition: 0.3s;
+    }
+
 }
 
 
@@ -175,10 +205,6 @@ body{
                 }
             }
             &-button{
-                :hover{
-                    transition: 0.3s;
-                    background-color: #000000;
-                }
             }
         }
     }
@@ -387,8 +413,10 @@ body{
             text-transform: uppercase;
             color: #464646;
             text-decoration: none;
+            transition: 0.3s;
 
-            &.active{
+            &.active,
+            &:hover{
                 color: #ff5100;
             }
           }  
@@ -420,6 +448,10 @@ body{
        a{
          color: #464646;
          text-decoration: none;
+
+         &:hover{
+             text-decoration: underline;
+         }
        }  
      }
 

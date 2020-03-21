@@ -43,6 +43,14 @@ body {
   background: linear-gradient(50deg, #304fff7c, #0184c0);
   color: white;
 }
+.btn-main:active {
+  background: rgba(0, 0, 0, 0.411);
+}
+.btn-main:hover {
+  box-shadow: 0 0 5px black;
+  transition: 0.3s;
+  background-color: #0000005d;
+}
 
 .btn-secondary {
   font-family: "Montserrat", sans-serif;
@@ -58,6 +66,13 @@ body {
   background: white;
   color: #414141;
 }
+.btn-secondary:active {
+  background: rgba(0, 0, 0, 0);
+}
+.btn-secondary:hover {
+  box-shadow: 0 0 5px black;
+  transition: 0.3s;
+}
 
 .btn-free {
   font-family: "Montserrat", sans-serif;
@@ -72,6 +87,13 @@ body {
   border: none;
   background: white;
   color: #414141;
+}
+.btn-free:active {
+  background: rgba(0, 0, 0, 0);
+}
+.btn-free:hover {
+  box-shadow: 0 0 5px black;
+  transition: 0.3s;
 }
 
 /* -- header -- */
@@ -155,11 +177,6 @@ body {
 .section-header-wrapper__form-input input:focus {
   background: rgba(255, 255, 255, 0.6);
 }
-.section-header-wrapper__form-button :hover {
-  transition: 0.3s;
-  background-color: #000000;
-}
-
 .section-promo {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -337,8 +354,9 @@ body {
   text-transform: uppercase;
   color: #464646;
   text-decoration: none;
+  transition: 0.3s;
 }
-.section-footer__nav li a.active {
+.section-footer__nav li a.active, .section-footer__nav li a:hover {
   color: #ff5100;
 }
 .section-footer__copyright_and_links {
@@ -363,4 +381,7 @@ body {
 .helper-link li a {
   color: #464646;
   text-decoration: none;
+}
+.helper-link li a:hover {
+  text-decoration: underline;
 }
