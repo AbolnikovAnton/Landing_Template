@@ -6,6 +6,13 @@
 body {
   font-family: "Lato", sans-serif;
   color: #414141;
+  min-width: 1170px;
+}
+
+.section-outer{
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
 }
 
 .section-inner {
