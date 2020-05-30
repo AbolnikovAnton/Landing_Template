@@ -1,16 +1,11 @@
 window.addEventListener('DOMContentLoaded', function () {
     'use strict';
 
+    let href = document.querySelectorAll('a[href]');
 
-    let btn = document.querySelectorAll('.btn');
-
-    // btn.addEventListener('click', (event) => {
-    //     event.preventDefault();
-    // });
-
-    let a = document.getElementsByClassName("btn");
-        a.addEventListener("click", function (e) {
-        e.preventDefault();
+    href.forEach(element => {
+        element.addEventListener('click', (event) => {
+            event.preventDefault();
+        });
     });
-
 });
